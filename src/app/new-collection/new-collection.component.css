@@ -1,0 +1,75 @@
+.new-collection {
+  padding: 30px;
+  text-align: center;
+}
+
+.new-collection .title h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.new-collection .new-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 gambar per baris */
+  gap: 30px;
+  justify-content: center;
+}
+
+.new-collection .product-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.new-collection .product-item img.main-img {
+  width: 100%;
+  height: 50vh;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.new-collection .product-item:hover img.main-img {
+  transform: scale(1.1);
+}
+
+.new-collection .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.new-collection .product-item:hover .overlay {
+  opacity: 1;
+}
+
+.new-collection .overlay span {
+  font-size: 20px;
+}
+
+.new-collection .new-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px; /* Ukuran ikon lebih besar */
+  height: 50px; /* Ukuran ikon lebih besar */
+  object-fit: contain;
+  z-index: 2;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Latar belakang transparan untuk ikon */
+  border-radius: 50%; /* Membuat ikon bulat jika diinginkan */
+  padding: 5px; /* Padding untuk memberikan jarak antara ikon dan tepi */
+}

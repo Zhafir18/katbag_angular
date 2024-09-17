@@ -1,0 +1,125 @@
+/* Bagian header */
+.header-main {
+  height: 50vh;
+  background-color: #dfdede;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-main-text {
+  font-size: 32px;
+  text-align: center;
+}
+
+.header-main-text button {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 7.5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header-main-text button a {
+  padding: 10px;
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+  display: block; /* Agar seluruh tombol bisa diklik */
+}
+
+/* Animasi hover pada tombol */
+.header-main-text button:hover {
+  background-color: #e3484d;
+  transform: scale(1.05); /* Efek sedikit memperbesar tombol saat di-hover */
+}
+
+.header-main-text button:hover a {
+  color: white;
+}
+
+/* Gambar header */
+.header-main-image img {
+  height: 50vh;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+/* Konten utama */
+.main-content-new .new-title,
+.main-content-collection .collection-title,
+.main-content-gift .gift-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.main-content-new .new-product,
+.main-content-collection .collection-product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-content-new .new-product img,
+.main-content-collection .collection-product img {
+  max-height: 50vh;
+  max-width: 40vh;
+  margin: 20px;
+}
+
+.main-content-gift .gift-img {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-gift .gift-img img {
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.more-product {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Animasi muncul halus */
+}
+
+.new-product:hover .more-product {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.collection-product:hover .more-product {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.more-product a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  transition: font-size 0.3s ease;
+}
+
+/* Hover animasi pada link */
+.more-product:hover a {
+  color: #e3484d;
+}
+
+/* Animasi saat hover pada more-product */
+.more-product:hover {
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}

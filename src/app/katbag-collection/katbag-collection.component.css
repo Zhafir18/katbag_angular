@@ -1,0 +1,63 @@
+.katbag-collections {
+  padding: 30px;
+  text-align: center;
+  background-color: #f8f8f8; /* Warna latar belakang */
+}
+
+.katbag-collections .title h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container untuk koleksi produk */
+.katbag-collections .collections {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Layout responsive */
+  gap: 20px; /* Jarak antar produk */
+  justify-items: center; /* Pusatkan produk di dalam grid */
+}
+
+.katbag-collections .product-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk produk */
+  transition: transform 0.3s ease; /* Efek hover untuk memperbesar */
+}
+
+.katbag-collections .product-item:hover {
+  transform: scale(1.05); /* Perbesar produk saat di-hover */
+}
+
+.katbag-collections .product-item img {
+  width: 100%;
+  height: 300px; /* Ukuran gambar, bisa disesuaikan */
+  object-fit: cover; /* Menjaga proporsi gambar */
+  border-radius: 8px;
+}
+
+/* Overlay yang muncul saat di-hover */
+.katbag-collections .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang gelap transparan */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Mulai dengan tidak terlihat */
+  transition: opacity 0.3s ease; /* Transisi untuk munculnya overlay */
+}
+
+.katbag-collections .product-item:hover .overlay {
+  opacity: 1; /* Tampilkan overlay saat di-hover */
+}
+
+.katbag-collections .overlay span {
+  font-size: 20px;
+  font-weight: bold;
+}

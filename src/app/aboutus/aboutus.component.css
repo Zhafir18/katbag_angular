@@ -1,0 +1,13 @@
+.about-us {
+  height: 50vh;
+}
+
+.about-us h1 {
+  text-align: center;
+}
+
+.about-us-content {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}

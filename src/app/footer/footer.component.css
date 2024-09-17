@@ -1,0 +1,135 @@
+.footer {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dfdede;
+}
+
+.footer .logo img {
+  width: 50%;
+}
+
+/* .footer a {
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #e3484d;
+} */
+
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  min-width: 500px;
+}
+
+.contact .about {
+  margin-bottom: 20px;
+}
+
+.connect a {
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color: #e3484d;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+}
+
+.connect a:hover {
+  background-color: #007bff; /* Change to blue on hover */
+  transform: rotateY(180deg);
+}
+
+.contact a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact a:hover {
+  background-color: #dfdede;
+  color: black;
+  text-decoration: underline;
+}
+
+.contact-message {
+  border: 1px solid #ccc; /* Light gray border for a softer look */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  min-width: 500px; /* Max width for better layout */
+}
+
+.contact-message h5 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-message .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-message .card div {
+  margin-bottom: 5px;
+}
+
+.contact-message label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555; /* Medium gray label color */
+}
+
+.contact-message input[type="text"],
+.contact-message textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  font-size: 16px;
+}
+
+.contact-message input[type="text"]:focus,
+.contact-message textarea:focus {
+  border-color: #999; /* Darker border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on focus */
+}
+
+.contact-message textarea {
+  resize: vertical; /* Allow vertical resize */
+  min-height: 100px; /* Minimum height for the textarea */
+}
+
+.contact-message button {
+  padding: 10px;
+  width: 100%;
+  background-color: #e3484d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-message button:hover {
+  color: black;
+  background-color: #dfdede;
+}
